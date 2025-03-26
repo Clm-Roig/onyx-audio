@@ -1,0 +1,96 @@
+main {
+  margin: auto;
+  max-width: 800px;
+}
+.pack {
+  background-color: #333333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+h3 {
+  margin: 0 0 0 0;
+  font-size: 1.8rem;
+}
+
+.pack .size-note {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.pack img {
+  margin: 0.5rem 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.pack .price {
+  background-color: #1b5348;
+  display: block;
+  font-size: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.pack .tagline {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.pack ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pack ul li {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.notes {
+  margin: auto;
+  background-color: #1b5348;
+  padding: 16px;
+  border-radius: 4px;
+  max-width: 800px;
+  text-align: left;
+}
+
+table {
+  background-color: #fff;
+  color: #222222;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #222222;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+td strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pack {
+    width: 90%;
+  }
+
+  .pack h3 {
+    font-size: 1.5rem;
+  }
+}
