@@ -7,6 +7,7 @@ class Footer extends HTMLElement {
     const year = new Date().getFullYear();
     this.innerHTML = `
     <footer>
+      <img src="images/logo.png" alt="Onyx Audio logo"/>
 	    <p>&copy;
 		  ${year} Onyx Audio. Tous droits réservés.
 	    </p>

@@ -4,10 +4,10 @@ form {
   flex-direction: column;
   max-width: 800px;
   margin: auto;
-  background-color: #333333;
+  background-color: var(--gray);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: #111 0px 5px 15px;
 }
 
 form label {
@@ -28,6 +28,6 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-  border-color: #1b5348;
+  border-color: var(--main-color);
   outline: none;
 }

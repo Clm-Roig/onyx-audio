@@ -1,8 +1,11 @@
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333333;
-  position: fixed;
-  bottom: 0;
+  background-color: var(--gray);
   width: 100%;
+}
+
+footer img {
+  filter: drop-shadow(0 0 3px #fff);
+  width: 100px;
 }
