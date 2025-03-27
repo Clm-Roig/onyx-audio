@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
     <footer>
 	    <p>&copy;
-		  ${year} Onyx Sono Location. Tous droits réservés.
+		  ${year} Onyx Audio. Tous droits réservés.
 	    </p>
     </footer>`;
   }

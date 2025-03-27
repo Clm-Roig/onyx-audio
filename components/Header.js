@@ -6,9 +6,9 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header>
-      <div><img src="images/osl_logo.png" alt="Onyx Sono Location logo" /></div>
+      <div><img src="images/logo.png" alt="Onyx Audio logo" /></div>
       <div>
-        <h1>Onyx Sono Location</h1>
+        <h1>Onyx Audio</h1>
         <nav>
           <ul>
             <li><a href="./">Accueil</a></li>
@@ -17,7 +17,7 @@ class Header extends HTMLElement {
           </ul>
         </nav>
       </div>
-      <div><img src="images/osl_logo.png" alt="Onyx Sono Location logo" /></div>
+      <div><img src="images/logo.png" alt="Onyx Audio logo" /></div>
     </header>`;
   }
 }
