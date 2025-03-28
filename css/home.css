@@ -7,6 +7,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  /* bottom clip */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 50px),
+    50% 100%,
+    0 calc(100% - 50px)
+  );
 }
 
 .hero-content p {
@@ -21,6 +29,10 @@
 
 #testimonies {
   background-color: var(--gray);
+  /* top clip  */
+  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+  padding-top: 70px;
 }
 
 .testimony-list {
