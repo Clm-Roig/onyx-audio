@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
     <footer>
       <img src="images/logo.png" alt="Onyx Audio logo"/>
 	    <p>&copy;
-		  ${year} Onyx Audio. Tous droits réservés.
+		  ${year} Onyx Audio
 	    </p>
     </footer>`;
   }
