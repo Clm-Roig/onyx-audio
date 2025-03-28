@@ -39,3 +39,38 @@ header div:nth-child(2) {
     filter: drop-shadow(0 0 3px #fff);
   }
 }
+
+/* =============== nav =============== */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+nav a {
+  border-radius: 8px;
+  color: #dddddd;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.2rem;
+  padding: 8px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--main-color);
+}
+
+/* =================================== */
