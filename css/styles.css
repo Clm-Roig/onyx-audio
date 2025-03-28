@@ -62,6 +62,20 @@ button:hover,
 a.btn:hover {
   background-color: var(--main-color-darker);
 }
+
+blockquote {
+  margin: 8px;
+  font-style: italic;
+}
+blockquote p::before {
+  content: "\201C";
+  font-size: 2rem;
+}
+
+blockquote p::after {
+  content: "\201D";
+  font-size: 2rem;
+}
 /* ========================================== */
 
 /* =============== nav =============== */
@@ -116,6 +130,42 @@ section {
   font-size: 1.6rem;
 }
 
+/* ===== Témoignages ===== */
+
+#testimonies {
+  background-color: var(--gray);
+}
+
+.testimony-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.testimony-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.33%;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.testimony-item h3 {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 8px;
+  margin-bottom: 0;
+}
+.testimony-item p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 500px;
+}
+
+/* ===== Services ===== */
+
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +181,6 @@ section {
   height: 500px;
   margin: auto;
   min-width: 500px;
-  width: 50%;
 }
 
 @media (max-width: 768px) {
