@@ -31,3 +31,9 @@ form textarea:focus {
   border-color: var(--main-color);
   outline: none;
 }
+
+#sendButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

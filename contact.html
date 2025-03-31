@@ -18,6 +18,7 @@
 
 	<script src="components/Header.js" type="text/javascript" defer></script>
 	<script src="components/Footer.js" type="text/javascript" defer></script>
+	<script src="contact.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -26,32 +27,27 @@
 	<main>
 		<section id="contact">
 			<h2>Contactez-nous</h2>
-			<form id="contact-form">
+			<!-- Using GoogleForm here, see https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+			<form id="contact-form" target="hidden_iframe" onsubmit="submitted=true;" enctype="text/plain"
+				action="https://docs.google.com/forms/d/e/1FAIpQLSdmVSkGSAQOcyp5mUSB1b_e3OrEPAOXPHQ0wv5CcRH7kuTt9g/formResponse?">
 				<label for="name">Nom :</label>
-				<input type="text" id="name" name="name" required>
+				<input type="text" id="entry.756876485" name="entry.756876485" required>
 
 				<label for="email">Email :</label>
-				<input type="email" id="email" name="email" required>
+				<input type="email" id="entry.1353684158" name="entry.1353684158" required>
 
 				<label for="message">Message :</label>
-				<textarea id="message" name="message" rows="12" required></textarea>
+				<textarea id="entry.132123013" name="entry.132123013" rows="12" required></textarea>
 
-				<button type="submit">Envoyer</button>
+				<button type="submit" id="sendButton">Envoyer</button>
 			</form>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		</section>
+
 	</main>
 
 	<footer-component></footer-component>
-	<script>
-		document
-			.getElementById("contact-form")
-			.addEventListener("submit", function (event) {
-				event.preventDefault();
-				alert("Merci pour votre message ! Nous vous contacterons bientôt.");
-				this.reset();
-			});
 
-	</script>
 </body>
 
 </html>
