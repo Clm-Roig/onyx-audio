@@ -17,62 +17,20 @@
   );
 }
 
+section.bright {
+  background-color: var(--gray);
+}
+
+section.dark {
+  background-color: var(--black);
+}
+
 .hero-content p {
   background: rgba(0, 0, 0, 0.8);
   max-width: 700px;
   margin: 20px auto;
   padding: 20px;
   font-size: 1.6rem;
-}
-
-/* ===== Témoignages ===== */
-
-#testimonies {
-  background-color: var(--gray);
-  /* top clip  */
-  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
-  margin-top: -40px;
-  padding-top: 70px;
-}
-
-.testimony-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.testimony-item {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 33.33%;
-  justify-content: flex-start;
-  margin: 0 auto;
-}
-
-.testimony-item h3 {
-  background-color: var(--main-color);
-  border-radius: 8px;
-  font-size: 1.5rem;
-  padding: 8px;
-  margin-bottom: 0;
-}
-.testimony-item p {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  max-width: 500px;
-}
-
-@media (max-width: 800px) {
-  .testimony-item {
-    flex-basis: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .testimony-item {
-    flex-basis: 100%;
-  }
 }
 
 /* ===== Services ===== */
@@ -125,6 +83,7 @@
 
 .service-item-1 {
   background-image: url("../images/speech.jpg");
+  background-position-x: 100%;
 }
 .service-item-2 {
   background-image: url("../images/guitarist.jpg");
@@ -145,6 +104,95 @@
   .service-item h3 {
     font-size: 1.5rem;
     padding: 12px;
+  }
+}
+
+/* ===== Warranties ===== */
+
+.warranty-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.warranty-item {
+  padding: 16px;
+  flex: 1;
+  flex-basis: calc(33.33% - 16px);
+}
+
+@media (max-width: 768px) {
+  .warranty-item {
+    flex-basis: 50%;
+  }
+}
+
+.warranty-item h3 {
+  font-size: 1.5rem;
+}
+
+.warranty-item p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.warranty-item i {
+  -webkit-text-stroke: 1px var(--main-color);
+  color: #eee;
+  font-size: 2.5rem;
+}
+
+/* ===== Testimonies ===== */
+
+#testimonies {
+  /* top clip  */
+  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+  padding-top: 70px;
+}
+
+.testimony-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.testimony-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.33%;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.testimony-item h3 {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 8px;
+  margin-bottom: 0;
+}
+.testimony-item p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 500px;
+}
+
+@media (max-width: 800px) {
+  .testimony-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimony-item {
+    flex-basis: 100%;
   }
 }
 

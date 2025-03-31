@@ -2,7 +2,7 @@
 
 header {
   background-color: var(--gray);
-  padding: 20px;
+  padding: 12px;
   text-align: center;
   display: flex;
 }
@@ -49,7 +49,12 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  padding: 0 15px;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+  border-right: 2px solid #dddddd;
 }
 
 @media (max-width: 768px) {
@@ -60,12 +65,12 @@ nav ul li {
 }
 
 nav a {
-  border-radius: 8px;
+  border-radius: 4px;
   color: #dddddd;
   text-decoration: none;
   transition: color 0.3s;
   font-size: 1.2rem;
-  padding: 8px;
+  padding: 12px;
   transition: 0.2s;
 }
 
