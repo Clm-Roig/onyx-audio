@@ -1,11 +1,10 @@
+// Submit form handler
+const form = document.getElementById("contact-form");
 var submitted = false;
 function sleep(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
-
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contact-form");
-
   form.addEventListener("submit", async function (e) {
     const sendButton = document.getElementById("sendButton");
     // Display spinner
@@ -31,3 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// URL parsing
+const params = new URLSearchParams(document.location.search);
+const packName = params.get("pack");
+if (!!packName) {
+  const message = `Bonjour, je souhaiterais louer le pack ${packName}. Pouvez-vous me recontacter pour discuter des modalités de location ?`;
+  document.getElementById("entry.132123013").value = message;
+}
