@@ -1,11 +1,44 @@
 footer {
-  text-align: center;
-  padding: 20px;
+  align-items: center;
   background-color: var(--gray);
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
   width: 100%;
 }
 
-footer img {
+footer .links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .links a {
+  padding: 4px;
+  display: flex;
+}
+
+footer .social,
+footer .social:hover {
+  background: none;
+}
+footer .social:hover > img {
+  filter: invert(70%);
+}
+
+footer .social > img {
+  filter: invert(100%);
+  width: 24px;
+  transition: all 0.2s;
+}
+
+footer .onyxAudioLogo {
   filter: drop-shadow(0 0 3px #fff);
-  width: 100px;
+  width: 80px;
+}
+
+footer p {
+  margin: 0;
 }
