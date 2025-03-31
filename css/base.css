@@ -23,6 +23,8 @@ body {
 h1 {
   font-family: "Palatino Linotype", serif;
   margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
 }
 
 h2 {
@@ -48,7 +50,7 @@ a:not(nav a):hover {
 button,
 a.btn {
   background-color: var(--main-color);
-  box-shadow: #111 0px 5px 15px;
+  box-shadow: #111 0px 1px 5px;
   border-radius: 8px;
   color: #dddddd;
   cursor: pointer;

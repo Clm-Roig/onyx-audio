@@ -8,7 +8,7 @@ class Header extends HTMLElement {
     <header>
       <div><img src="images/logo.png" alt="Onyx Audio logo" /></div>
       <div>
-        <h1>Onyx Audio</h1>
+        <h1>ONYX AUDIO</h1>
         <nav>
           <ul>
             <li><a href="./">Accueil</a></li>
