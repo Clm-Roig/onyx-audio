@@ -12,7 +12,7 @@ class Header extends HTMLElement {
         <nav>
           <ul>
             <li><a href="./">Accueil</a></li>
-            <li><a href="location.html">Location</a></li>
+            <li><a href="prestations.html">Prestations</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>

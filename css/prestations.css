@@ -10,11 +10,6 @@ main {
   margin: 20px auto;
 }
 
-h3 {
-  margin: 0 0 0 0;
-  font-size: 1.8rem;
-}
-
 .bloc .size-note {
   margin-top: 4px;
   margin-bottom: 0;
@@ -94,6 +89,16 @@ td strong {
   .bloc h3 {
     font-size: 1.5rem;
   }
+}
+
+#examples span {
+  padding: 2px;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 #onDemand .bloc li {
