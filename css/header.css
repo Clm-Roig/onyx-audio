@@ -60,7 +60,12 @@ nav ul li:nth-child(2) {
 @media (max-width: 768px) {
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
+  }
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2) {
+    border-bottom: 2px solid #dddddd;
+    border-right: none;
   }
 }
 
