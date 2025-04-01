@@ -60,7 +60,7 @@ nav ul li:nth-child(2) {
 @media (max-width: 768px) {
   nav ul li {
     display: block;
-    margin: 15px 0;
+    padding: 15px 0;
   }
   nav ul li:nth-child(1),
   nav ul li:nth-child(2) {
