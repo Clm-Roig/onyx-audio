@@ -28,6 +28,13 @@ h1 {
   font-weight: normal;
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+    
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
