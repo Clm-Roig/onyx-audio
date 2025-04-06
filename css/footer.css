@@ -15,20 +15,31 @@ footer .links {
   gap: 8px;
 }
 
+@media (max-width: 570px) {
+  footer .links {
+    flex-direction: column;
+  }
+}
+
 footer .links a {
   padding: 4px;
   display: flex;
 }
 
-footer .social,
-footer .social:hover {
+footer .social-links {
+  display: flex;
+  gap: 8px;
+}
+
+footer .social-link,
+footer .social-link:hover {
   background: none;
 }
-footer .social:hover > img {
+footer .social-link:hover > img {
   filter: invert(70%);
 }
 
-footer .social > img {
+footer .social-link > img {
   filter: invert(100%);
   width: 24px;
   transition: all 0.2s;

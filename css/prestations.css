@@ -82,10 +82,6 @@ td strong {
 }
 
 @media (max-width: 768px) {
-  .bloc {
-    width: 90%;
-  }
-
   .bloc h3 {
     font-size: 1.5rem;
   }
