@@ -100,3 +100,29 @@ td strong {
 #onDemand .bloc li {
   font-size: 1.1rem;
 }
+
+.mics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 0;
+}
+
+.mics li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mics li img {
+  background: none;
+  max-width: 200px;
+}
+
+.mics li p {
+  margin: 0;
+}
+
+.mics .price {
+  font-size: 1.5rem;
+}
