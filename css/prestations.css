@@ -97,32 +97,37 @@ td strong {
   text-decoration: underline;
 }
 
-#onDemand .bloc li {
+#on-demand .bloc li {
   font-size: 1.1rem;
 }
 
-.mics {
+#on-demand h3:nth-child(n + 2) {
+  margin-top: 3rem;
+}
+
+.equipments {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 0;
 }
 
-.mics li {
+.equipments li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.mics li img {
+.equipments li img {
   background: none;
   max-width: 200px;
 }
 
-.mics li p {
+.equipments li p {
   margin: 0;
 }
 
-.mics .price {
+.equipments .price {
   font-size: 1.5rem;
 }
