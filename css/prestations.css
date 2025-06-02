@@ -92,8 +92,10 @@ td strong {
 }
 
 .result {
+  display: block;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: 4px;
   text-decoration: underline;
 }
 

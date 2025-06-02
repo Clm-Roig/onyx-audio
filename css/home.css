@@ -114,6 +114,12 @@ section.dark {
   }
 }
 
+.service-localisation {
+  font-size: 1.25rem;
+  max-width: 900px;
+  margin: 16px auto;
+  line-height: 1.6rem;
+}
 /* ===== Warranties ===== */
 
 .warranty-list {
