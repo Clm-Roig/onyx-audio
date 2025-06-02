@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Display success message
       const message = document.createElement("p");
       message.textContent =
-        "Votre message a bien été envoyé, nous vous recontacterons dès que possible, merci !";
+        "Votre message a bien été envoyé, je vous recontacterai dès que possible, merci !";
       sendButton.style.transition = "opacity 1s";
       sendButton.style.opacity = 0;
       sendButton.replaceWith(message);
