@@ -17,11 +17,13 @@
   );
 }
 
-section.bright {
+section.bright,
+footer.bright {
   background-color: var(--gray);
 }
 
-section.dark {
+section.dark,
+footer.dark {
   background-color: var(--black);
 }
 
@@ -166,9 +168,6 @@ section.dark {
 
 /* ===== Testimonies ===== */
 
-#testimonies {
-}
-
 .testimony-list {
   display: flex;
   flex-wrap: wrap;
@@ -193,7 +192,16 @@ section.dark {
 .testimony-item p {
   font-size: 1.2rem;
   line-height: 1.5rem;
+  margin: 4px 0;
   max-width: 500px;
+}
+
+.star-rating {
+  margin-top: 8px;
+}
+
+.star-rating .checked {
+  color: #fbbc04;
 }
 
 @media (max-width: 800px) {

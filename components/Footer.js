@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     const year = new Date().getFullYear();
     this.innerHTML = `
-    <footer>
+    <footer class="dark">
       <div class="links">
         <a href="mailto:onyx-audio-location@protonmail.com">onyx-audio-location@protonmail.com</a> 
         <a href="tel:+33643503596">06 43 50 35 96</a> 
