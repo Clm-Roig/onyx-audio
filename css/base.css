@@ -91,16 +91,16 @@ a.btn:hover {
 blockquote {
   margin: 8px;
   font-style: italic;
-}
-blockquote p::before {
-  content: "\201C";
-  font-size: 2rem;
+  & > p::before {
+    content: "\201C";
+    font-size: 2rem;
+  }
+  & > p::after {
+    content: "\201D";
+    font-size: 2rem;
+  }
 }
 
-blockquote p::after {
-  content: "\201D";
-  font-size: 2rem;
-}
 /* ========================================== */
 
 section {

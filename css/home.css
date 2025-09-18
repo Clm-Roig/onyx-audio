@@ -172,6 +172,7 @@ footer.dark {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  justify-content: space-evenly;
 }
 
 .testimony-item {
@@ -180,7 +181,7 @@ footer.dark {
   flex-direction: column;
   flex-basis: 33.33%;
   justify-content: flex-start;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .testimony-item h3 {
