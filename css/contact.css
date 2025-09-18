@@ -8,28 +8,24 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: #111 0px 5px 15px;
-}
-
-form label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  background-color: #444444;
-  color: #dddddd;
-  transition: border-color 0.3s;
-}
-
-form input:focus,
-form textarea:focus {
-  border-color: var(--main-color);
-  outline: none;
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #444444;
+    color: #dddddd;
+    transition: border-color 0.3s;
+    &:focus {
+      border-color: var(--main-color);
+      outline: none;
+    }
+  }
 }
 
 #sendButton {

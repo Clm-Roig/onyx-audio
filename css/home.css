@@ -15,6 +15,15 @@
     50% 100%,
     0 calc(100% - 50px)
   );
+
+  p {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+  }
 }
 
 section.bright,
@@ -25,15 +34,6 @@ footer.bright {
 section.dark,
 footer.dark {
   background-color: var(--black);
-}
-
-.hero-content p {
-  background: rgba(0, 0, 0, 0.8);
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  margin: 20px auto;
-  max-width: 700px;
-  padding: 20px;
 }
 
 /* ===== Services ===== */
@@ -63,31 +63,40 @@ footer.dark {
   background-size: cover;
   flex-direction: column;
   transition: all 0.2s;
-}
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: #111 0px 5px 15px;
+  }
 
-.service-item:hover {
-  transform: scale(1.03);
-  box-shadow: #111 0px 5px 15px;
-}
+  h3 {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2.5rem;
+    padding: 20px;
+    position: relative;
+    text-shadow: var(--main-color) 0px 5px 15px;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      padding: 12px;
+    }
+  }
 
-.service-item h3 {
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 2.5rem;
-  padding: 20px;
-  position: relative;
-  text-shadow: var(--main-color) 0px 5px 15px;
-  text-transform: uppercase;
-}
+  a {
+    background: var(--main-color);
+    color: #dddddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0;
+    padding: 12px;
+    margin-top: -10px;
+    z-index: 1;
+  }
 
-.service-item a {
-  background: var(--main-color);
-  color: #dddddd;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  margin: 0;
-  padding: 12px;
-  margin-top: -10px;
-  z-index: 1;
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    height: 350px;
+    min-width: 200px;
+  }
 }
 
 .service-item-1 {
@@ -102,18 +111,6 @@ footer.dark {
 }
 .service-item-4 {
   background-image: url("../images/wedding.jpg");
-}
-
-@media (max-width: 768px) {
-  .service-item {
-    flex-basis: 100%;
-    height: 350px;
-    min-width: 200px;
-  }
-  .service-item h3 {
-    font-size: 1.5rem;
-    padding: 12px;
-  }
 }
 
 .service-localisation {
@@ -142,28 +139,22 @@ footer.dark {
   padding: 16px;
   flex: 1;
   flex-basis: calc(33.33% - 16px);
-}
-
-@media (max-width: 768px) {
-  .warranty-item {
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  i {
+    -webkit-text-stroke: 1px var(--main-color);
+    color: #eee;
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
     flex-basis: 50%;
   }
-}
-
-.warranty-item h3 {
-  font-size: 1.5rem;
-}
-
-.warranty-item p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  margin: 0;
-}
-
-.warranty-item i {
-  -webkit-text-stroke: 1px var(--main-color);
-  color: #eee;
-  font-size: 2.5rem;
 }
 
 /* ===== Testimonies ===== */
@@ -182,19 +173,24 @@ footer.dark {
   flex-basis: 33.33%;
   justify-content: flex-start;
   margin: 0;
-}
-
-.testimony-item h3 {
-  background-color: var(--main-color);
-  border-radius: 8px;
-  font-size: 1.5rem;
-  padding: 8px;
-}
-.testimony-item p {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  margin: 4px 0;
-  max-width: 500px;
+  h3 {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 4px 0;
+    max-width: 500px;
+  }
+  @media (max-width: 800px) {
+    flex-basis: 50%;
+  }
+  @media (max-width: 600px) {
+    flex-basis: 100%;
+  }
 }
 
 .star-rating {
@@ -203,18 +199,6 @@ footer.dark {
 
 .star-rating .checked {
   color: #fbbc04;
-}
-
-@media (max-width: 800px) {
-  .testimony-item {
-    flex-basis: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .testimony-item {
-    flex-basis: 100%;
-  }
 }
 
 /* =================================== */

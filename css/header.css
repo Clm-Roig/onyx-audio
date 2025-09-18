@@ -5,83 +5,64 @@ header {
   padding: 12px;
   text-align: center;
   display: flex;
-}
-
-header img {
-  height: 96px;
-  filter: drop-shadow(0 0 3px #fff);
-}
-
-header div:nth-child(1),
-header div:nth-child(3) {
-  display: flex;
-  align-items: center;
-}
-
-header div:nth-child(1),
-header div:nth-child(3) {
-  width: 96px;
-}
-
-header div:nth-child(2) {
-  flex-grow: 1;
-  margin: auto;
-}
-
-@media (max-width: 500px) {
-  header div:nth-child(1),
-  header div:nth-child(3) {
-    width: 48px;
+  img {
+    height: 96px;
+    filter: drop-shadow(0 0 3px #fff);
+    @media (max-width: 500px) {
+      height: 48px;
+      filter: drop-shadow(0 0 3px #fff);
+    }
+  }
+  & > div:nth-child(1),
+  & > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    width: 96px;
+    @media (max-width: 500px) {
+      width: 48px;
+    }
   }
 
-  header img {
-    height: 48px;
-    filter: drop-shadow(0 0 3px #fff);
+  & > div:nth-child(2) {
+    flex-grow: 1;
+    margin: auto;
   }
 }
 
 /* =============== nav =============== */
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 4px 16px;
-}
-
-nav ul li {
-  display: inline;
-  padding: 0 15px;
-}
-
-nav ul li:nth-child(1),
-nav ul li:nth-child(2) {
-  border-right: 1px solid #dddddd;
-}
-
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    padding: 15px 0;
+nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 4px 16px;
   }
-  nav ul li:nth-child(1),
-  nav ul li:nth-child(2) {
-    border-bottom: 1px solid #dddddd;
-    border-right: none;
+  ul li {
+    display: inline;
+    padding: 0 15px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-right: 1px solid #dddddd;
+      @media (max-width: 768px) {
+        border-bottom: 1px solid #dddddd;
+        border-right: none;
+      }
+    }
+    a {
+      border-radius: 4px;
+      color: #dddddd;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: 1.2rem;
+      padding: 12px;
+      transition: 0.2s;
+      &:hover {
+        background-color: var(--main-color);
+      }
+    }
+    @media (max-width: 768px) {
+      display: block;
+      padding: 15px 0;
+    }
   }
 }
-
-nav a {
-  border-radius: 4px;
-  color: #dddddd;
-  text-decoration: none;
-  transition: color 0.3s;
-  font-size: 1.2rem;
-  padding: 12px;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  background-color: var(--main-color);
-}
-
-/* =================================== */

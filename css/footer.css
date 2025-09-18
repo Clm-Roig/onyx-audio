@@ -7,49 +7,42 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%;
-}
-
-footer .links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-@media (max-width: 570px) {
-  footer .links {
-    flex-direction: column;
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media (max-width: 570px) {
+      flex-direction: column;
+    }
+    a {
+      padding: 4px;
+      display: flex;
+    }
   }
-}
+  .social-links {
+    display: flex;
+    gap: 8px;
+  }
+  .social-link,
+  .social-link:hover {
+    background: none;
+  }
+  .social-link:hover > img {
+    filter: invert(70%);
+  }
 
-footer .links a {
-  padding: 4px;
-  display: flex;
-}
+  .social-link > img {
+    filter: invert(100%);
+    width: 24px;
+    transition: all 0.2s;
+  }
 
-footer .social-links {
-  display: flex;
-  gap: 8px;
-}
+  .onyxAudioLogo {
+    filter: drop-shadow(0 0 3px #fff);
+    width: 80px;
+  }
 
-footer .social-link,
-footer .social-link:hover {
-  background: none;
-}
-footer .social-link:hover > img {
-  filter: invert(70%);
-}
-
-footer .social-link > img {
-  filter: invert(100%);
-  width: 24px;
-  transition: all 0.2s;
-}
-
-footer .onyxAudioLogo {
-  filter: drop-shadow(0 0 3px #fff);
-  width: 80px;
-}
-
-footer p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }

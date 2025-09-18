@@ -8,45 +8,45 @@ main {
   border-radius: 8px;
   padding: 20px;
   margin: 20px auto;
-}
+  .size-note {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  img {
+    margin: 0.5rem 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .price {
+    background-color: var(--main-color);
+    display: block;
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  .tagline {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
 
-.bloc .size-note {
-  margin-top: 4px;
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-.bloc img {
-  margin: 0.5rem 0;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.bloc .price {
-  background-color: var(--main-color);
-  display: block;
-  font-size: 2rem;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 0.5rem;
-  border-radius: 8px;
-}
-
-.bloc .tagline {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.bloc ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
-}
-
-.bloc ul li {
-  margin: 4px 0;
-  font-size: 0.9rem;
+  ul li {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+  h3 {
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .notes {
@@ -81,12 +81,6 @@ td strong {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .bloc h3 {
-    font-size: 1.5rem;
-  }
-}
-
 #examples span {
   padding: 2px;
 }
@@ -112,24 +106,20 @@ td strong {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 0;
-}
-
-.equipments li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.equipments li img {
-  background: none;
-  max-width: 200px;
-}
-
-.equipments li p {
-  margin: 0;
-}
-
-.equipments .price {
-  font-size: 1.5rem;
+  & > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  & > li img {
+    background: none;
+    max-width: 200px;
+  }
+  & > li p {
+    margin: 0;
+  }
+  & > .price {
+    font-size: 1.5rem;
+  }
 }
