@@ -26,16 +26,6 @@
   }
 }
 
-section.bright,
-footer.bright {
-  background-color: var(--gray);
-}
-
-section.dark,
-footer.dark {
-  background-color: var(--black);
-}
-
 /* ===== Services ===== */
 
 #services {
