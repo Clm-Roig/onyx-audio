@@ -122,6 +122,9 @@ td strong {
   & > .price {
     font-size: 1.5rem;
   }
+  & .price-small {
+    font-size: 1.4rem;
+  }
   & > li > img.eurolite {
     max-width: 100%;
     width: 300px;
