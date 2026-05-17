@@ -149,18 +149,24 @@
 
 /* ===== Testimonies ===== */
 
+:root {
+  --testimony-horizontal-gap: 2rem;
+  --testimony-vertical-gap: 8px;
+}
+
 .testimony-list {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: var(--testimony-horizontal-gap) var(--testimony-vertical-gap);
 }
 
 .testimony-item {
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex-basis: 33.33%;
+  flex-basis: calc(33.33% - var(--testimony-horizontal-gap));
   justify-content: flex-start;
   margin: 0;
   h3 {
@@ -175,6 +181,9 @@
     margin: 4px 0;
     max-width: 500px;
   }
+  blockquote {
+    margin: 4px;
+  }
   @media (max-width: 800px) {
     flex-basis: 50%;
   }
@@ -184,7 +193,7 @@
 }
 
 .star-rating {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .star-rating .checked {
